@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Renzo and Ariana Date Generator ✨</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #fff8f0;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #d94f70;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff8da1;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e96b85;
+    }
+
+    #idea {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #444;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💕 Renzo & Ariana Date Generator 💕</h1>
+  <button onclick="generateIdea()">🚀 Give Me a Date Idea 🌟</button>
+  <div id="idea"></div>
+
+  <script>
+    const ideas = [
+      "Ceramic painting date (Terra Mia) 🎨",
+      "Stand up comedy show (Punch Line, Cheaper Than Therapy) 😂",
+      "Jazz club (Lakehouse, Black Cat) 🎶",
+      "Go to the movies 🎬",
+      "Mini Golf/Bowling 🎳🏳",
+      "Go out for dinner and drinks 🍽️🍹",
+      "Picnic and sunset viewpoint (Mt. Tam, Ocean Beach, etc) 🌄🌾",
+      "Art or science museum date (After Dark Thursdays, MOMA, DeYoung) 🏫🔬",
+      "Craft fair/night market (e.g., Fort Mason Night Market) 🎎",
+      "Roller skating or ice skating (Church of 8 Wheels, Yerba Buena Ice) ⛸️🛂",
+      "Arcade (Emporium or Musée Mécanique) 🎮",
+      "Get a sweet treat (boba, ice cream, donuts, etc) 🍦🥜🥤",
+      "Brunch date 🍳🥞",
+      "Farmers market 🌿🍆",
+      "Sunset walk at the Dish 🌇🚶‍♀️",
+      "Golden Gate Park (Stow Lake Boathouse, Tea Garden, etc) 🏞️🌿",
+      "Cook a new recipe together + candlelit dinner 🌟🕳️🍽️",
+      "Takeout and watch a movie 🌟🌊🎬",
+      "DIY cocktail-making night at home 🍹🥒",
+      "Plan or research your next vacation destination 🗼️🌍",
+      "Air dry clay craft night 🖌️🪨",
+      "Watch a documentary together 🎬🔬",
+      "Set up a spa night with massages and face masks 🛏️‍♀️💌",
+      "Bake something from scratch—cookies, bread, or cake 🥞🍰🥐",
+      "Do a couples trivia game or 'We’re Not Really Strangers' 🧐🥳",
+      "Write letters to yourselves in 5/10 years 📧📜",
+      "At-home wine and charcuterie board night 🥂🥘",
+      "Smoothies/acai and a walk around the park 🥝🌿",
+      "Mall date! Shop till you drop 🛍️💼"
+    ];
+
+    function generateIdea() {
+      const randomIndex = Math.floor(Math.random() * ideas.length);
+      const idea = ideas[randomIndex];
+      document.getElementById("idea").innerText = idea;
+    }
+  </script>
+
+</body>
+</html>
